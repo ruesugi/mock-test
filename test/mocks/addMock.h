@@ -28,6 +28,7 @@ class AddMock : AddInterface
     AddMock() {}
     ~AddMock() {}
     MOCK_METHOD(uint8_t, Add, (uint8_t a, uint8_t b));
+    MOCK_METHOD(uint8_t, Sub, (uint8_t a, uint8_t b));
 };
 
 void AddMock_SetMock(AddMock* mock);

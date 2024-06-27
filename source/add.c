@@ -11,3 +11,8 @@ uint8_t Add(uint8_t a, uint8_t b)
 {
     return a + b;
 }
+
+uint8_t Sub(uint8_t a, uint8_t b)
+{
+    return a - b;
+}

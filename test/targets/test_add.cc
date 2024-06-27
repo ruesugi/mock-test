@@ -11,3 +11,9 @@ TEST(AddTest, ShouldReturn8) {
   // Expect equality.
   EXPECT_EQ(Add(3, 5), 8);
 }
+
+TEST(SubTest, ShouldReturn3)
+{
+    // Expect equality.
+    EXPECT_EQ(Sub(8, 5), 3);
+}
