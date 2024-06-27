@@ -39,7 +39,7 @@ class Add2Test : public ::testing::Test
 
 TEST_F(Add2Test, ShouldReturn7)
 {
-    EXPECT_CALL(*addMock, Add(_, _))
+    EXPECT_CALL(*addMock, Sub(_, _))
         .Times(1)
         .WillOnce(Return(5));
 
