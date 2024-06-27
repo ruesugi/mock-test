@@ -25,9 +25,7 @@ jobs:
 
       - name: Execute gcov
         run: |
-          gcov ${{github.workspace}}/test/build/CMakeFiles/add_test.dir/${{github.workspace}}/source/*.gcda
-          gcov ${{github.workspace}}/test/build/CMakeFiles/add2_test.dir/${{github.workspace}}/source/*.gcda
-          gcov ${{github.workspace}}/test/build/CMakeFiles/add3_test.dir/${{github.workspace}}/source/*.gcda
+          gcov -o ${{github.workspace}}/test/build/CMakeFiles
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.0.1

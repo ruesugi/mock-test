@@ -21,7 +21,7 @@ using ::testing::Return;
 using ::testing::SaveArg;
 using ::testing::SetArgPointee;
 
-class Add2Test : public ::testing::Test
+class Add3Test : public ::testing::Test
 {
    protected:
     virtual void SetUp()
@@ -37,7 +37,7 @@ class Add2Test : public ::testing::Test
     NiceMock<AddMock>* addMock;
 };
 
-TEST_F(Add2Test, ShouldReturn7)
+TEST_F(Add3Test, ShouldReturn2)
 {
     EXPECT_CALL(*addMock, Sub(_, _))
         .Times(1)
