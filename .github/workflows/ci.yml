@@ -23,8 +23,12 @@ jobs:
           cmake --build ${{github.workspace}}/test/build
           ctest --test-dir ${{github.workspace}}/test/build
 
+      - name: Execute gcov
+        run: |
+          cd ${{github.workspace}}/test/build/CMakeFiles/unit_test.dir/${{github.workspace}}/source
+          gcov *.gcda
+
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.0.1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-
