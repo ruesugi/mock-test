@@ -20,6 +20,7 @@ class AddInterface
     AddInterface() {}
     virtual ~AddInterface() {}
     virtual uint8_t Add(uint8_t a, uint8_t b) = 0;
+    virtual uint8_t Sub(uint8_t a, uint8_t b) = 0;
 };
 
 class AddMock : AddInterface
