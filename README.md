@@ -4,4 +4,4 @@ NXPマイコンのプロジェクトにGoogleTestを導入して、GitHub Action
 
 [![Auto test](https://github.com/atf-uesugi/nxp-unit-test-sample/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/atf-uesugi/nxp-unit-test-sample/actions/workflows/ci.yml)
 
-[![codecov](https://codecov.io/gh/atf-uesugi/nxp-unit-test-sample/graph/badge.svg?token=FOQS8GYPEL)](https://codecov.io/gh/atf-uesugi/nxp-unit-test-sample)
+[![codecov](https://codecov.io/gh/ruesugi/mock-test/graph/badge.svg?token=2VUhjMMRzZ)](https://codecov.io/gh/ruesugi/mock-test)
