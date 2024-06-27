@@ -23,10 +23,6 @@ jobs:
           cmake --build ${{github.workspace}}/test/build
           ctest --test-dir ${{github.workspace}}/test/build
 
-      - name: Execute gcov
-        run: |
-          gcov -o ${{github.workspace}}/test/build/CMakeFiles/
-
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.0.1
         with:
