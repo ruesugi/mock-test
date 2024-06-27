@@ -11,5 +11,5 @@ extern "C"
 
 uint8_t Add2(uint8_t a, uint8_t b)
 {
-    return Sub(a, b) + 2;
+    return Add(a, b) + 2;
 }
