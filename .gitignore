@@ -1,0 +1,12 @@
+.settings
+Debug
+Release
+*.launch
+*.bak
+.vscode
+*.jlink
+*.pdf
+*.drawio
+*.json
+*.jflash
+build
