@@ -37,11 +37,11 @@ class Add4Test : public ::testing::Test
     NiceMock<AddMock>* addMock;
 };
 
-TEST_F(Add4Test, ShouldReturn16)
+TEST_F(Add4Test, ShouldReturn8)
 {
-    EXPECT_CALL(*addMock, Add(_, _))
+    EXPECT_CALL(*addMock, Sub(_, _))
         .Times(1)
-        .WillOnce(Return(12));
+        .WillOnce(Return(4));
 
-    EXPECT_EQ(Add4(8, 4), 16);
+    EXPECT_EQ(Add4(8, 4), 8);
 }
