@@ -4,8 +4,8 @@ coverage:
       default:
         target: 80%
 ignore:
-  - "*Mock.cc"
-  - "*Mock.h"
+  - "**/*Mock.cc"
+  - "**/*Mock.h"
 comment:
   layout: "condensed_header, condensed_files, diff, flags, files, condensed_footer"
   behavior: default
