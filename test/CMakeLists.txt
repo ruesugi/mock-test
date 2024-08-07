@@ -57,7 +57,21 @@ target_link_libraries(
   GTest::gmock_main
 )
 
+add_executable(
+  add4_test
+  targets/test_add4.cc
+  ../source/add4.c
+  ./mocks/addMock.cc
+)
+target_include_directories(add4_test PRIVATE ../source)
+target_include_directories(add4_test PRIVATE ./mocks)
+target_link_libraries(
+  add4_test
+  GTest::gmock_main
+)
+
 include(GoogleTest)
 gtest_discover_tests(add_test)
 gtest_discover_tests(add2_test)
 gtest_discover_tests(add3_test)
+gtest_discover_tests(add4_test)
